@@ -1,27 +1,27 @@
+import React, { useState } from 'react';
+function SecondEx ()
+{
 
-import React,{useState}from 'react';
+  const [number, setNumber] = useState(0)
+  function getincement ()
+  {
+    setNumber(number + 1)
+  }
+  function getdecement ()
+  {
+    setNumber(number - 1)
 
+  }
 
-function SecondEx(){
-
-    const[number,setNumber]=useState(0)
-    function getincement(){
-      setNumber(number+1)
-    }
-    function getdecement(){
-      setNumber(number-1)
-  
-    }
-  
-    return (
-        <div>
-        <div className="App">
-        <button onClick={getincement}> +</button>   
+  return (
+    <div>
+      <div className="App">
+        <button onClick={getincement}> +</button>
         <h1>{number}</h1>
         <button onClick={getdecement}>-</button>
-        </div>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default SecondEx

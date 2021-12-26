@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Layout from './component/Layout';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import FourthEx from './component/FourthEx';
+import Hookse from './component/Hookse';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Layout />
+    <FourthEx />
+    <Hookse />
   </React.StrictMode>,
   document.getElementById('root')
 );
